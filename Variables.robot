@@ -72,6 +72,24 @@ ${NEXT_OF_KIN_NAME}  id:msf-text-name
 ${RELATIONSHIP_NEXT_OF_KIN}  id:msf-text-relationship
 ${NEXT_OF_KIN_PHONE}  id:msf-numeric-phone-number
 ${SECOND_NEXT_BTN_CURRENT}  xpath://button[@class='fw-button-next']
+${COUNTRY_RESIDENCE}  id:msf-text-country-of-residence
+${STATE_RESIDENCE}  id:msf-text-state-of-residence
+${RESIDENTIAL_ADDRESS}  id:msf-textarea-residential-address
+${DISTRICT_CONTACT_FIELD}  xpath://div[@class='fw-wizard-step fw-current']//input[@id='msf-text-district']
+${LANDMARK_CONTACT}  xpath://input[@id='msf-text-landmark-(type-here-name-of-a-popular-place-close-to-you,-example---church,-school,-bus-stop,-etc.)']
+${EMAIL_CONTACT}  xpath://input[@id='msf-mail-email-address']
+${GSM_CONTACT_FIELD}   xpath://input[@id='msf-numeric-gsm']
+${PHONE_NUMBER_CONTACT}  id:msf-numeric-home-telephone
+${OFFICE_NUMBER_CONTACT}  id:msf-numeric-office-number
+${THIRD_NEXT_BTN_CURRENT}  xpath://button[@class='fw-button-next']
+${OTHER_BANK_NAME}  id:msf-text-bank-name
+${OTHER_ACCOUNT_NUMBER}  id:msf-numeric-account-number
+${BVN_CURRENT}  xpath://input[@id='msf-numeric-bank-verification-number-(bvn)']
+${INT_PASSPORT}  xpath://label[.='International Passport']
+${ID_NUMBER_FIELD}  id:msf-text-id-number
+${ID_PLACE}  xpath://input[@id='msf-text-place-id-was-issued-(eg-ubiaja,-ehor,-owerri,-etc.)']
+${DATE_ISSUED_ID}  id:msf-date-date-id-was-issued
+${EXOIRY_ID_DATE}  id:msf-date-expiry-date-on-id
 
 
 
