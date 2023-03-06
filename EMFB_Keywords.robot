@@ -14,7 +14,7 @@ Navigate to the current account application page
     Wait Until Element Is Enabled    ${PROCEED_CURRENT_ACCNT_LINK}
     Click Element    ${PROCEED_CURRENT_ACCNT_LINK}
 
-Complete or fill in all required credentials
+Complete account type and personal data information
     Open Browser  ${URL}    ${BROWSER}
     Maximize Browser Window
     Wait Until Element Is Enabled    ${OPEN_ACCNT_LINK_HOME}
@@ -35,7 +35,7 @@ Complete or fill in all required credentials
     Click Element    ${DATE_CURRENT}
     Click Element       xpath://*[@id="ui-datepicker-div"]/table
     ${Value}  Get Element Attribute    ${DATE_CURRENT}    value
-    Should Be Equal As Strings    ${Value}    2023-02-08
+    Should Be Equal As Strings    ${Value}    2023-03-08
     Sleep    2s
     Wait Until Element Is Visible    ${GENDER_CURRENT}
     Click Element    ${GENDER_CURRENT}
@@ -50,25 +50,49 @@ Complete or fill in all required credentials
     Input Text    ${RELIGION_FIELD}    Christianity
     Input Text    ${MAIDEN_NAME_FIELD}    Regina
     Input Text    ${SPOUSE_NAME_FIELD}    Ogoh Magareth
+
+Complete Work place information
     Input Text    ${OCCUPATION_CURRENT_FIELD}    Teaching
     Input Text    ${WORKPLACE_ADDRESS_FIELD}    15 Illushi road, Uromi
     Input Text    ${DISTRICT_ADDRESS_FIELD}    Esan West
     Input Text    ${LGA_ADDRESS_FIELD}    Esan West
     Input Text    ${STATE_ADDRESS_FIELD}    Edo
+
+Complete next of kin information
     Input Text    ${NEXT_OF_KIN_NAME}    Akon Uhong
     Input Text    ${RELATIONSHIP_NEXT_OF_KIN}    Brother
     Input Text    ${NEXT_OF_KIN_PHONE}    234564564587
     Click Element    ${SECOND_NEXT_BTN_CURRENT}
 
+Complete new customer contact information
+    Input Text    ${COUNTRY_RESIDENCE}    Nigeria
+    Input Text    ${STATE_RESIDENCE}    Edo
+    Input Text    ${RESIDENTIAL_ADDRESS}    15 Grace Street
+    Input Text    ${DISTRICT_CONTACT_FIELD}    Esan West
+    Input Text    ${LANDMARK_CONTACT}    okpujie Pry School
+    Input Text    ${EMAIL_CONTACT}    simonekpa@gmail.com
+    Input Text    ${GSM_CONTACT_FIELD}    34547645487
+    Input Text    ${PHONE_NUMBER_CONTACT}    345433674665
+    Input Text    ${OFFICE_NUMBER_CONTACT}    54467446545
+    Click Element    ${THIRD_NEXT_BTN_CURRENT}
 
-Click Next Month
-    Wait Until Element Is Enabled    xpath://*[@id="ui-datepicker-div"]/div/a[2]/span
-    Click Element    xpath://*[@id="ui-datepicker-div"]/div/a[2]/span
-    
-Click previous month
-    Sleep    1s
-    Wait Until Element Is Enabled    xpath://span[@class='ui-icon ui-icon-circle-triangle-w']
-    Click Element    xpath://span[@class='ui-icon ui-icon-circle-triangle-w']
+Complete other bank account details
+    Input Text    ${OTHER_BANK_NAME}    UBA
+    Input Text    ${OTHER_ACCOUNT_NUMBER}    3454618792
+    Input Text    ${BVN_CURRENT}    22226455466
+
+Complete mode of ID section
+    Click Element    ${INT_PASSPORT}
+    Input Text    ${ID_NUMBER_FIELD}    2881900647940003
+    Input Text    ${ID_PLACE}    Ekpoma
+    Sleep    2s
+    Click Element    ${DATE_ISSUED_ID}
+    Click Element  xpath://*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[2]
+    ${Value2}  Get Element Attribute    ${DATE_ISSUED_ID}    Value
+    Should Be Equal As Strings    ${Value2}    2023-02-27
+
+
+
 
 
 
