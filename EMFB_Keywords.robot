@@ -87,7 +87,7 @@ Complete mode of ID section
     Input Text    ${ID_PLACE}    Ekpoma
     Sleep    2s
     Click Element    ${DATE_ISSUED_ID}
-    Click Element  xpath://*[@id="ui-datepicker-div"]/table/tbody/tr[5]/td[2]
+    Click Element  xpath://a[.='27']
     ${Value2}  Get Element Attribute    ${DATE_ISSUED_ID}    Value
     Should Be Equal As Strings    ${Value2}    2023-02-27
 
