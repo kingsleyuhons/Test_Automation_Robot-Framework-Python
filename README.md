@@ -21,7 +21,7 @@ To set up and run the test suite locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   https://github.com/kingsleyuhons/Test_Automation_Robot-Framework-Python.git
+   git clone https://github.com/kingsleyuhons/Test_Automation_Robot-Framework-Python.git
    cd Test_Automation_Robot-Framework-Python
    ```
 2. **Create a virtual environment (optional but recommended):**
